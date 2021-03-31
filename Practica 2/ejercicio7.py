@@ -182,16 +182,15 @@ evalu2 = """
  """
 
 nombres = nombres.strip().split(',''\n')
-
 evalu1 = evalu1.strip().split(',''\n')
 evalu2 = evalu2.strip().split(',''\n')
-
 
 transformar_en_numero(evalu1)
 transformar_en_numero(evalu2)
 
 #Crea una lista con los nombres y la suma de las dos evaluaciones
 notas_con_nombres = list(zip(nombres,sumar_notas(evalu1,evalu2)))
+
 
 print(notas_con_nombres)
 calcular_alumnos_promedio(notas_con_nombres)
